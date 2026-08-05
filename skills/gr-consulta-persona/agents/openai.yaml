@@ -1,0 +1,3 @@
+interface:
+  display_name: "Consultar Persona GR"
+  short_description: "Diagnostica sincronizaciones, bloqueos y DQ de una persona en GoldenRecord"

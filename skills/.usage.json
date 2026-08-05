@@ -1,0 +1,80 @@
+{
+  "GR-sincro-destinos": {
+    "archived_at": null,
+    "created_at": "2026-08-04T07:21:45.991527+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-08-04T07:57:17.228314+00:00",
+    "last_viewed_at": "2026-08-04T07:57:17.205160+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 2,
+    "view_count": 2
+  },
+  "consultar-estado-sincro-destinos": {
+    "archived_at": null,
+    "created_at": "2026-08-04T07:11:24.825010+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-08-04T07:11:24.843577+00:00",
+    "last_viewed_at": "2026-08-04T07:11:24.825037+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 1,
+    "view_count": 1
+  },
+  "gr-consulta-persona": {
+    "archived_at": null,
+    "created_at": "2026-08-05T12:19:25.850586+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-08-05T12:42:33.517154+00:00",
+    "last_viewed_at": "2026-08-05T12:42:33.415974+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 13,
+    "view_count": 13
+  },
+  "gr-consulta_persona": {
+    "archived_at": null,
+    "created_at": "2026-08-04T15:55:41.377281+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-08-04T16:11:56.867756+00:00",
+    "last_viewed_at": "2026-08-04T16:11:56.814384+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 26,
+    "view_count": 26
+  },
+  "hermes-agent": {
+    "archived_at": null,
+    "created_at": "2026-08-03T11:02:16.434389+00:00",
+    "created_by": null,
+    "last_patched_at": null,
+    "last_used_at": "2026-08-03T11:02:22.924682+00:00",
+    "last_viewed_at": "2026-08-03T11:02:22.866118+00:00",
+    "patch_count": 0,
+    "pinned": false,
+    "state": "active",
+    "use_count": 2,
+    "view_count": 2
+  },
+  "oracle-sqlcl": {
+    "archived_at": null,
+    "created_at": "2026-08-03T11:30:46.277888+00:00",
+    "created_by": "agent",
+    "last_patched_at": "2026-08-03T12:07:57.823856+00:00",
+    "last_used_at": "2026-08-04T16:12:19.561120+00:00",
+    "last_viewed_at": "2026-08-04T16:12:19.516742+00:00",
+    "patch_count": 2,
+    "pinned": false,
+    "state": "active",
+    "use_count": 6,
+    "view_count": 6
+  }
+}

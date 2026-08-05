@@ -1,0 +1,108 @@
+model:
+  default: deepseek-v4-pro
+  provider: opencode-go
+  base_url: https://opencode.ai/zen/go/v1
+  api_mode: chat_completions
+agent:
+  max_turns: 90
+  disabled_toolsets:
+    - browser
+    - code_execution
+    - computer_use
+    - context_engine
+    - cronjob
+    - discord
+    - discord_admin
+    - feishu_doc
+    - feishu_drive
+    - homeassistant
+    - kanban
+    - memory
+    - project
+    - search
+    - spotify
+    - stt
+    - video
+    - video_gen
+    - web
+    - x_search
+    - yuanbao
+compression:
+  enabled: false
+display:
+  tool_progress: all
+memory:
+  memory_enabled: false
+  user_profile_enabled: false
+_config_version: 33
+platform_toolsets:
+  cli:
+    - clarify
+    - delegation
+    - file
+    - image_gen
+    - session_search
+    - skills
+    - todo
+    - tts
+    - vision
+    - mcp-oracle-sqlcl
+smart_model_routing:
+  enabled: false
+session_reset:
+  mode: none
+known_plugin_toolsets:
+  cli:
+    - spotify
+mcp_servers:
+  oracle-sqlcl:
+    command: /opt/sqlcl/bin/sql
+    args:
+      - -mcp
+    enabled: true
+    sampling:
+      enabled: false
+    tools:
+      include:
+        - connections_list
+        - connect
+        - disconnect
+        - sql_run
+
+# ── Security ──────────────────────────────────────────────────────────
+# Secret redaction is ON by default — strings that look like API keys,
+# tokens, and passwords are masked in tool output, logs, and chat
+# responses before the model or user ever sees them. Set redact_secrets
+# to false to disable (e.g. when developing the redactor itself).
+# tirith pre-exec scanning is enabled by default when the tirith binary
+# is available. Configure via security.tirith_* keys or env vars
+# (TIRITH_ENABLED, TIRITH_BIN, TIRITH_TIMEOUT, TIRITH_FAIL_OPEN).
+#
+# security:
+#   redact_secrets: true
+#   tirith_enabled: true
+#   tirith_path: "tirith"
+#   tirith_timeout: 5
+#   tirith_fail_open: true
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4
